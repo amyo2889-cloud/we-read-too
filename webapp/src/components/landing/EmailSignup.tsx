@@ -1,0 +1,56 @@
+import { useState } from "react";
+import { Mail } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+
+const EmailSignup = () => {
+  const [email, setEmail] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (email.trim()) {
+      setSubmitted(true);
+      setEmail("");
+    }
+  };
+
+  return (
+    <section className="py-20 md:py-28">
+      <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-secondary mb-6">
+          <Mail className="h-6 w-6 text-primary" />
+        </div>
+        <h2 className="text-3xl md:text-4xl font-fraunces font-bold text-foreground mb-4">
+          Join the DiscoveryGate Community
+        </h2>
+        <p className="text-muted-foreground text-lg mb-8">
+          Get reading tips, new releases, and resources to support your child's learning journey.
+        </p>
+
+        {submitted ? (
+          <div className="bg-secondary rounded-2xl p-6 text-center">
+            <p className="text-lg font-medium text-foreground">Thank you for signing up!</p>
+            <p className="text-sm text-muted-foreground mt-1">We'll keep you updated.</p>
+          </div>
+        ) : (
+          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+            <Input
+              type="email"
+              placeholder="Enter your email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+              className="rounded-full h-12 px-5 flex-1"
+            />
+            <Button type="submit" size="lg" className="rounded-full px-8 h-12">
+              Sign Up
+            </Button>
+          </form>
+        )}
+      </div>
+    </section>
+  );
+};
+
+export default EmailSignup;
