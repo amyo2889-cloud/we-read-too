@@ -5,7 +5,7 @@ const books = [
   {
     title: "The City is Loud",
     description: "Explore everyday sounds while building confidence with high-frequency words.",
-    price: "$14.00",
+    price: "$15.00",
     image: "/book-city-is-loud.jpg",
     color: "from-amber-100 to-yellow-50",
     paymentLink: "https://square.link/u/J1U4lms0?src=sheet",
@@ -13,7 +13,7 @@ const books = [
   {
     title: "The Park is Big",
     description: "Practice sight words through play, movement, and familiar outdoor experiences.",
-    price: "$14.00",
+    price: "$15.00",
     image: "/book-park-is-big.jpg",
     color: "from-sky-100 to-blue-50",
     paymentLink: "https://square.link/u/ihqX9gIf?src=sheet",
@@ -21,7 +21,7 @@ const books = [
   {
     title: "The Kitchen is Fun",
     description: "Learn through everyday routines with engaging, repeatable language.",
-    price: "$14.00",
+    price: "$15.00",
     image: "/book-kitchen-is-fun.jpg",
     color: "from-emerald-100 to-green-50",
     paymentLink: "https://square.link/u/cxXqWUcJ?src=sheet",
