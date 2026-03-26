@@ -66,8 +66,8 @@ const BundlesSection = () => {
           <p className="text-sm text-muted-foreground mb-8">In-Person Events Only</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <div className="flex items-center gap-3 bg-secondary rounded-xl px-6 py-4">
-              <div className="w-10 h-10 rounded-full bg-warm-gold/20 flex items-center justify-center">
-                <span className="text-lg">🃏</span>
+              <div className="w-14 h-14 rounded-lg overflow-hidden flex-shrink-0">
+                <img src="/flashcards.png" alt="Flashcards" className="w-full h-full object-cover" />
               </div>
               <div className="text-left">
                 <p className="font-medium text-foreground">Add Flashcards</p>
