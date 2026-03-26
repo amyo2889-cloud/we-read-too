@@ -9,9 +9,9 @@ const AboutSection = () => {
           <div className="relative order-2 lg:order-1">
             <div className="aspect-[4/5] rounded-3xl overflow-hidden bg-gradient-to-br from-secondary via-light-sage/30 to-soft-peach/50 relative">
               <img
-                src="/placeholder.svg"
+                src="/dr-amy-salter.png"
                 alt="Dr. Amy Salter"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-top"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/10 to-transparent" />
             </div>

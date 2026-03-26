@@ -6,22 +6,22 @@ const books = [
     title: "The City is Loud",
     description: "Explore everyday sounds while building confidence with high-frequency words.",
     price: "$14.00",
-    image: "/placeholder.svg",
-    color: "from-amber-100 to-orange-50",
+    image: "/book-city-is-loud.jpg",
+    color: "from-amber-100 to-yellow-50",
   },
   {
     title: "The Park is Big",
     description: "Practice sight words through play, movement, and familiar outdoor experiences.",
     price: "$14.00",
-    image: "/placeholder.svg",
-    color: "from-emerald-100 to-teal-50",
+    image: "/book-park-is-big.jpg",
+    color: "from-sky-100 to-blue-50",
   },
   {
     title: "The Kitchen is Fun",
     description: "Learn through everyday routines with engaging, repeatable language.",
     price: "$14.00",
-    image: "/placeholder.svg",
-    color: "from-rose-100 to-pink-50",
+    image: "/book-kitchen-is-fun.jpg",
+    color: "from-emerald-100 to-green-50",
   },
 ];
 
@@ -49,7 +49,7 @@ const BooksSection = () => {
                 <img
                   src={book.image}
                   alt={book.title}
-                  className="w-32 h-40 object-cover rounded-lg shadow-lg group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute top-4 right-4 bg-background/90 backdrop-blur-sm text-foreground text-sm font-bold px-3 py-1 rounded-full">
                   {book.price}
