@@ -2,16 +2,29 @@ import { useState } from "react";
 import { Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { api } from "@/lib/api";
 
 const EmailSignup = () => {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (email.trim()) {
+    if (!email.trim()) return;
+
+    setLoading(true);
+    setError(null);
+
+    try {
+      await api.post("/api/emails", { email });
       setSubmitted(true);
       setEmail("");
+    } catch {
+      setError("Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -34,19 +47,25 @@ const EmailSignup = () => {
             <p className="text-sm text-muted-foreground mt-1">We'll keep you updated.</p>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-            <Input
-              type="email"
-              placeholder="Enter your email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              className="rounded-full h-12 px-5 flex-1"
-            />
-            <Button type="submit" size="lg" className="rounded-full px-8 h-12">
-              Sign Up
-            </Button>
-          </form>
+          <>
+            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+              <Input
+                type="email"
+                placeholder="Enter your email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                disabled={loading}
+                className="rounded-full h-12 px-5 flex-1"
+              />
+              <Button type="submit" size="lg" disabled={loading} className="rounded-full px-8 h-12">
+                {loading ? "Joining..." : "Sign Up"}
+              </Button>
+            </form>
+            {error !== null ? (
+              <p className="text-sm text-destructive mt-3">{error}</p>
+            ) : null}
+          </>
         )}
       </div>
     </section>
