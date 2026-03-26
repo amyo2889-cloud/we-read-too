@@ -49,7 +49,6 @@ emailsRouter.post("/emails", async (c) => {
 
   const fields: Record<string, string> = {
     Email: email,
-    "Signed Up": new Date().toISOString(),
   };
 
   if (name) {
