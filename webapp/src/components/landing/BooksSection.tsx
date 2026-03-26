@@ -8,6 +8,7 @@ const books = [
     price: "$14.00",
     image: "/book-city-is-loud.jpg",
     color: "from-amber-100 to-yellow-50",
+    paymentLink: "https://square.link/u/J1U4lms0?src=sheet",
   },
   {
     title: "The Park is Big",
@@ -15,6 +16,7 @@ const books = [
     price: "$14.00",
     image: "/book-park-is-big.jpg",
     color: "from-sky-100 to-blue-50",
+    paymentLink: "https://square.link/u/ihqX9gIf?src=sheet",
   },
   {
     title: "The Kitchen is Fun",
@@ -22,6 +24,7 @@ const books = [
     price: "$14.00",
     image: "/book-kitchen-is-fun.jpg",
     color: "from-emerald-100 to-green-50",
+    paymentLink: "https://square.link/u/cxXqWUcJ?src=sheet",
   },
 ];
 
@@ -62,9 +65,11 @@ const BooksSection = () => {
                 <p className="text-muted-foreground text-sm leading-relaxed mb-6">
                   {book.description}
                 </p>
-                <Button className="w-full rounded-full gap-2 group/btn">
-                  <ShoppingCart className="h-4 w-4 transition-transform group-hover/btn:scale-110" />
-                  Add to Cart
+                <Button className="w-full rounded-full gap-2 group/btn" asChild>
+                  <a href={book.paymentLink} target="_blank" rel="noopener noreferrer">
+                    <ShoppingCart className="h-4 w-4 transition-transform group-hover/btn:scale-110" />
+                    Buy Now
+                  </a>
                 </Button>
               </div>
             </div>

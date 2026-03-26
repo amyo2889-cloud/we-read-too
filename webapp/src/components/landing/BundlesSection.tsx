@@ -1,4 +1,6 @@
 import { Star, Gift, Package } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { ShoppingCart } from "lucide-react";
 
 const BundlesSection = () => {
   return (
@@ -30,7 +32,13 @@ const BundlesSection = () => {
             <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-2">
               2 Books
             </p>
-            <p className="text-4xl font-fraunces font-bold text-foreground">$24</p>
+            <p className="text-4xl font-fraunces font-bold text-foreground mb-6">$24</p>
+            <Button className="w-full rounded-full gap-2" asChild>
+              <a href="https://square.link/u/OOyKuDL3?src=sheet" target="_blank" rel="noopener noreferrer">
+                <ShoppingCart className="h-4 w-4" />
+                Buy Now
+              </a>
+            </Button>
           </div>
 
           {/* 3 Books */}
@@ -43,7 +51,13 @@ const BundlesSection = () => {
             <p className="text-sm font-medium opacity-80 uppercase tracking-wider mb-2">
               3 Books
             </p>
-            <p className="text-4xl font-fraunces font-bold">$30</p>
+            <p className="text-4xl font-fraunces font-bold mb-6">$30</p>
+            <Button variant="secondary" className="w-full rounded-full gap-2" asChild>
+              <a href="https://square.link/u/m9HlafmR?src=sheet" target="_blank" rel="noopener noreferrer">
+                <ShoppingCart className="h-4 w-4" />
+                Buy Now
+              </a>
+            </Button>
           </div>
         </div>
 
