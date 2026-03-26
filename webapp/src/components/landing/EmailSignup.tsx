@@ -6,6 +6,7 @@ import { api } from "@/lib/api";
 
 const EmailSignup = () => {
   const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -18,9 +19,10 @@ const EmailSignup = () => {
     setError(null);
 
     try {
-      await api.post("/api/emails", { email });
+      await api.post("/api/emails", { email, name: name.trim() || undefined });
       setSubmitted(true);
       setEmail("");
+      setName("");
     } catch {
       setError("Something went wrong. Please try again.");
     } finally {
@@ -48,19 +50,29 @@ const EmailSignup = () => {
           </div>
         ) : (
           <>
-            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+            <form onSubmit={handleSubmit} className="flex flex-col gap-3 max-w-md mx-auto">
               <Input
-                type="email"
-                placeholder="Enter your email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
+                type="text"
+                placeholder="Your name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 disabled={loading}
-                className="rounded-full h-12 px-5 flex-1"
+                className="rounded-full h-12 px-5"
               />
-              <Button type="submit" size="lg" disabled={loading} className="rounded-full px-8 h-12">
-                {loading ? "Joining..." : "Sign Up"}
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Input
+                  type="email"
+                  placeholder="Enter your email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                  disabled={loading}
+                  className="rounded-full h-12 px-5 flex-1"
+                />
+                <Button type="submit" size="lg" disabled={loading} className="rounded-full px-8 h-12">
+                  {loading ? "Joining..." : "Sign Up"}
+                </Button>
+              </div>
             </form>
             {error !== null ? (
               <p className="text-sm text-destructive mt-3">{error}</p>
