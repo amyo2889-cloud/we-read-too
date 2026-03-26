@@ -24,15 +24,11 @@ const BundlesSection = () => {
 
           {/* 2 Books */}
           <div className="bg-card rounded-2xl border border-border p-8 text-center relative hover:shadow-lg transition-shadow">
-            <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-warm-gold text-foreground text-xs font-bold px-4 py-1 rounded-full flex items-center gap-1">
-              <Star className="h-3 w-3" fill="currentColor" />
-              Save $4
-            </div>
             <Gift className="h-8 w-8 text-primary mx-auto mb-4" />
             <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-2">
               2 Books
             </p>
-            <p className="text-4xl font-fraunces font-bold text-foreground mb-6">$24</p>
+            <p className="text-4xl font-fraunces font-bold text-foreground mb-6">$28</p>
             <Button className="w-full rounded-full gap-2" asChild>
               <a href="https://square.link/u/OOyKuDL3?src=sheet" target="_blank" rel="noopener noreferrer">
                 <ShoppingCart className="h-4 w-4" />
@@ -48,10 +44,11 @@ const BundlesSection = () => {
               Best Value
             </div>
             <Gift className="h-8 w-8 mx-auto mb-4 opacity-90" />
-            <p className="text-sm font-medium opacity-80 uppercase tracking-wider mb-2">
+            <p className="text-sm font-medium opacity-80 uppercase tracking-wider mb-1">
               3 Books
             </p>
-            <p className="text-4xl font-fraunces font-bold mb-6">$30</p>
+            <p className="text-4xl font-fraunces font-bold mb-1">$38</p>
+            <p className="text-sm opacity-70 mb-6">Buy 2, get the 3rd for $10</p>
             <Button variant="secondary" className="w-full rounded-full gap-2" asChild>
               <a href="https://square.link/u/m9HlafmR?src=sheet" target="_blank" rel="noopener noreferrer">
                 <ShoppingCart className="h-4 w-4" />
