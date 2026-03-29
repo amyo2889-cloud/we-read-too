@@ -38,7 +38,7 @@ const AboutSection = () => {
                 Dr. Amy Salter is an educator, researcher, and mom passionate about helping children become confident readers.
               </p>
               <p>
-                With over a decade of experience in education and technology, she created the <strong className="text-foreground">We Read Too</strong> series to make early literacy engaging, accessible, and affirming for all children.
+                With over a decade of experience in education and technology, she created the <strong className="text-foreground">We Read Too™</strong> series to make early literacy engaging, accessible, and affirming for all children.
               </p>
               <p>
                 Her work centers on building strong reading foundations through simple, joyful, and meaningful learning experiences.

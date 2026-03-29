@@ -9,7 +9,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-2.5 mb-4">
               <BookOpen className="h-5 w-5 text-primary" />
-              <span className="font-fraunces text-lg font-bold text-foreground">We Read Too</span>
+              <span className="font-fraunces text-lg font-bold text-foreground">We Read Too™</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
               A DiscoveryGate Publishing Brand

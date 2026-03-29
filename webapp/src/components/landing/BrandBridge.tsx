@@ -9,10 +9,10 @@ const BrandBridge = () => {
           <Heart className="h-5 w-5 text-primary" />
         </div>
         <h2 className="text-3xl md:text-4xl font-fraunces font-bold text-foreground mb-6">
-          We Read Too is Just the Beginning
+          We Read Too™ is Just the Beginning
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-          We Read Too is part of <strong className="text-foreground">DiscoveryGate Publishing</strong>, a growing platform dedicated to creating inclusive, engaging, and educational content for young learners.
+          We Read Too™ is part of <strong className="text-foreground">DiscoveryGate Publishing</strong>, a growing platform dedicated to creating inclusive, engaging, and educational content for young learners.
         </p>
         <p className="mt-4 text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
           Our mission is simple: to help every child build confidence, joy, and identity through reading.

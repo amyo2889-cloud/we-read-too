@@ -47,7 +47,7 @@ const EventsSection = () => {
                 Beautifully Black Children's Book Festival
               </h3>
               <p className="text-muted-foreground text-sm mb-4">
-                Come say hello and grab signed copies of the We Read Too book series! Dr. Amy Salter will be a featured vendor.
+                Come say hello and grab signed copies of the We Read Too™ book series! Dr. Amy Salter will be a featured vendor.
               </p>
               <div className="flex flex-wrap gap-4 text-sm">
                 <div className="flex items-center gap-1.5 text-muted-foreground">

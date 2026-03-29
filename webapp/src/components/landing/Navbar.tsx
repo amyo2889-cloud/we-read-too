@@ -17,7 +17,7 @@ const Navbar = () => {
           <button onClick={() => scrollTo("hero")} className="flex items-center gap-2.5 group">
             <BookOpen className="h-6 w-6 text-primary transition-transform group-hover:scale-110" />
             <span className="font-fraunces text-lg md:text-xl font-bold text-foreground">
-              We Read Too
+              We Read Too™
             </span>
           </button>
 

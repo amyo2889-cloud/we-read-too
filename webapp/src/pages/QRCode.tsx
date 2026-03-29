@@ -25,7 +25,7 @@ export default function QRCodePage() {
               className="text-white text-2xl font-bold leading-tight"
               style={{ fontFamily: "'Fraunces', Georgia, serif" }}
             >
-              We Read Too
+              We Read Too™
             </h1>
             <p className="text-[#a8d5d2] text-sm mt-1">
               by Dr. Amy Salter
