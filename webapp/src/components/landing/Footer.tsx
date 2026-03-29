@@ -32,10 +32,10 @@ const Footer = () => {
           <div>
             <h4 className="font-fraunces font-bold text-foreground mb-4">Contact</h4>
             <a
-              href="mailto:Sciencewithmisso@gmail.com"
+              href="mailto:thegoalcoachllc@outlook.com"
               className="text-sm text-muted-foreground hover:text-primary transition-colors"
             >
-              Sciencewithmisso@gmail.com
+              thegoalcoachllc@outlook.com
             </a>
           </div>
         </div>
