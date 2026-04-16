@@ -22,9 +22,23 @@ const Footer = () => {
           {/* Social */}
           <div>
             <h4 className="font-fraunces font-bold text-foreground mb-4">Follow Us</h4>
-            <div className="space-y-2 text-sm text-muted-foreground">
-              <p>@wereadtoobooks</p>
-              <p>@thegoalcoach</p>
+            <div className="space-y-2 text-sm">
+              <a
+                href="https://www.instagram.com/wereadtoobooks"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-muted-foreground hover:text-primary transition-colors"
+              >
+                @wereadtoobooks
+              </a>
+              <a
+                href="https://www.instagram.com/thegoalcoach"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-muted-foreground hover:text-primary transition-colors"
+              >
+                @thegoalcoach
+              </a>
             </div>
           </div>
 
