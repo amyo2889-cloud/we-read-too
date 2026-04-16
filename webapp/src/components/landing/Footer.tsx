@@ -23,7 +23,7 @@ const Footer = () => {
           <div>
             <h4 className="font-fraunces font-bold text-foreground mb-4">Follow Us</h4>
             <div className="space-y-2 text-sm text-muted-foreground">
-              <p>@wereadtoo</p>
+              <p>@wereadtoobooks</p>
               <p>@thegoalcoach</p>
             </div>
           </div>
