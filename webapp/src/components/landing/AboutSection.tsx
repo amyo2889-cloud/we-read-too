@@ -9,7 +9,7 @@ const AboutSection = () => {
           <div className="relative order-2 lg:order-1">
             <div className="aspect-[4/5] rounded-3xl overflow-hidden bg-gradient-to-br from-secondary via-light-sage/30 to-soft-peach/50 relative">
               <img
-                src="/dr-amy-salter.png"
+                src={`${import.meta.env.BASE_URL}dr-amy-salter.png`}
                 alt="Dr. Amy Salter"
                 className="w-full h-full object-cover object-top"
               />

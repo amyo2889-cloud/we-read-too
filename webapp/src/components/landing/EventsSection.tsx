@@ -36,7 +36,7 @@ const EventsSection = () => {
           <div className="flex flex-col md:flex-row">
             <div className="md:w-56 shrink-0">
               <img
-                src="/festival-flyer.jpg"
+                src={`${import.meta.env.BASE_URL}festival-flyer.jpg`}
                 alt="Atlanta's Beautifully Black Children's Book Festival"
                 className="w-full h-56 md:h-full object-cover object-top"
               />

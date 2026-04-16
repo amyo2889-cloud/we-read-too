@@ -67,7 +67,7 @@ const BundlesSection = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <div className="flex items-center gap-3 bg-secondary rounded-xl px-6 py-4">
               <div className="w-14 h-14 rounded-lg overflow-hidden flex-shrink-0">
-                <img src="/flashcards.png" alt="Flashcards" className="w-full h-full object-cover" />
+                <img src={`${import.meta.env.BASE_URL}flashcards.png`} alt="Flashcards" className="w-full h-full object-cover" />
               </div>
               <div className="text-left">
                 <p className="font-medium text-foreground">Add Flashcards</p>
